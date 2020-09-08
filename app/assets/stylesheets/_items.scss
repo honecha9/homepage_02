@@ -1,0 +1,99 @@
+.item_index{
+  
+  width: 100vw;
+  &_header{
+    height: 200px;
+    border-bottom: 10px double #009fe8;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .image{
+      .img{
+      height: 100%;
+      width: 300px;
+      margin-left:20px;
+      }
+    }
+    .header_logo{
+      h1{
+        font-size: 50px;
+        margin-top: 40px;
+        font-weight: bold;
+        text-align: center;
+      }
+      h2{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-right: 30px;
+      }
+    }
+  }
+  &_body{
+    width: 100vw;
+    height: 900px;
+    .item_image{
+      display: flex;
+      justify-content: space-between;
+      .setu{
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 300px;
+        width: 300px;
+
+      }
+    }
+    .item_all{
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+      margin: auto;
+      flex-wrap: wrap;
+      .btn{
+        border: 3px solid #009fe8;
+        height: 250px;
+        width: 250px;
+        margin-top: 20px;
+        font-size: 1.5em;
+        p{
+          color: #009fe8;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 100px;
+        }
+      }
+      .btn:hover{
+        background-color: #009fe8;
+        color: #fff;
+        p{
+          color: #fff;
+        }
+      }
+    }
+  }
+  &_footer{
+    background-color: #009fe8;
+    height: 300px;
+    width: 100%;
+    .footer_all{
+      display: flex;
+      justify-content: flex-start;
+      .footer_image{
+        .mitsu{
+          height: 280px;
+          width: 300px;
+          margin-left: 50px;
+        }
+      }
+      .footer_items{
+        margin-left: 50px;
+        width: 500px;
+        p{
+          flex-wrap: wrap;
+          font-size: 1.5em;
+          padding-top: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
