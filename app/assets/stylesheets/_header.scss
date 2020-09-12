@@ -1,0 +1,27 @@
+.header{
+  height: 200px;
+  border-bottom: 10px double #009fe8;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  .image{
+    .img{
+    height: 100%;
+    width: 300px;
+    margin-left:20px;
+    }
+  }
+  .header_logo{
+    h1{
+      font-size: 50px;
+      margin-top: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+    h2{
+      font-size: 20px;
+      margin-top: 10px;
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.case_index
+  = render "items/header"
+  .case_index_body
+    .explai_all
+      .page
+        = form_with model: @case do |f|
+          .page_inside
+            .short
+              = f.text_field :problem, class: "short_items", placeholder: "problem"
+              = f.text_field :user, class: "short_items", placeholder: "user"
+              = f.text_field :image, class: "short_items", placeholder: "image"
+            .text_line
+              = f.text_field :explain, class: "explain", placeholder: "explain"
+            .submit
+              = f.submit "SAVE", class: "btn"
+          .cases
+            - @cases.each do |g|
+              .cases_items
+                .image_case
+                  = image_tag g.image, class: "gazou"
+                .user
+                  .user_name
+                    = "施術者: #{g.user}"
+                    .problem
+                      = "症状: #{g.problem}"
+                    .setumei
+                      = "詳しい治療内容: #{g.explain}"
+
+
+  = render "items/footer"
