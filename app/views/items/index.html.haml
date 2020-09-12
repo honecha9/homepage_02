@@ -1,42 +1,22 @@
 .item_index
-  .item_index_header
-    .image
-      = image_tag 'kamome.png', alt:"", class: "img"
-    .header_logo
-      %h1みつやま接骨院
-      %h2兵庫の何でも屋 腰痛 関節痛 筋肉痛 お任せください!!
+  =render "header"
+
   .item_index_body
     .item_image
       = image_tag 'massage.png', class: "setu"
       = image_tag 'ashitsubo.png' , class: "setu"
     .item_all
       .shop.btn
-        %p三山接骨院について
+        = link_to "三山接骨院について",  shop_index_path, class: "submit"
       .book.btn
-        %p予約をこちらから
+        = link_to "予約をこちらから",  new_shop_path, class: "submit"
       .location.btn
-        %p所在地
+        = link_to "所在地", new_shop_path, class: "submit"
       .staff.btn
-        %pスタッフ紹介
+        = link_to "スタッフ紹介",  new_shop_path, class: "submit"
       .menu.btn
-        %p施術メニュー
+        = link_to "施術メニュー",  new_shop_path, class: "submit"
       .review.btn
-        %p過去の施術事例
+        = link_to "過去の施術事例",  cases_path, class: "submit"
 
-  .item_index_footer
-    .footer_all
-      .footer_image
-        = image_tag 'mitsuyama.png', class: "mitsu"
-      .footer_items
-        .shop
-          %p三山接骨院について
-        .book
-          %p予約をこちらから
-        .location
-          %p所在地
-        .staff
-          %pスタッフ紹介
-        .menu
-          %p施術メニュー
-        .review
-          %p過去の施術事例
+  =render "footer"
